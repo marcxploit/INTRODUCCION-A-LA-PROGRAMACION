@@ -1,10 +1,10 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 
-//Alumno: Marco Antonio García Bautista
-//Número de cuenta: 305027731
-//Licenciatura: Informática
-//Materia: Introducción a la Programación
-//Descripción: Programa en C que determina si dos números introducidos por el usuario son iguales
+//Alumno: Marco Antonio GarcÃ­a Bautista
+//NÃºmero de cuenta: 305027731
+//Licenciatura: InformÃ¡tica
+//Materia: IntroducciÃ³n a la ProgramaciÃ³n
+//DescripciÃ³n: Programa en C que determina si dos nÃºmeros introducidos por el usuario son iguales
 
 int main()
 {
@@ -12,33 +12,33 @@ int main()
     int numero2 = 0; // definimos la variable numero2 como entero y lo inicializamos con el valor 0
     
     // Mostramos las instrucciones en pantalla
-    printf("INSTRUCCIONES: Captura 2 números ENTEROS y yo te diré si son iguales.\n");
-    printf("¿Estás listo? ¡Vamos!\n\n");
+    printf("INSTRUCCIONES: Captura 2 nÃºmeros ENTEROS y yo te dirÃ© si son iguales.\n");
+    printf("Â¿EstÃ¡s listo? Â¡Vamos!\n\n");
     
-    printf("Captura el primer número: "); // Solicitamos que el usuario capture el número 1
+    printf("Captura el primer nÃºmero: "); // Solicitamos que el usuario capture el nÃºmero 1
 
-    // Creamos un bucle para numero1 para validar que scanf devuelva 1, por lo que no se terminará a menos que el valor capturado por el usuario sea un número válido
+    // Creamos un bucle para numero1 para validar que scanf devuelva 1, por lo que no se terminarÃ¡ a menos que el valor capturado por el usuario sea un nÃºmero vÃ¡lido
     while (scanf("%d", &numero1) != 1)
     {
-        printf("Captura un número entero para continuar: ");
-        while (getchar() != '\n'); // getchar() Limpia el búfer de entrada, descarta el valor no válido y permite solicitarlo nuevamente
+        printf("Captura un nÃºmero entero para continuar: ");
+        while (getchar() != '\n'); // getchar() Limpia el bÃºfer de entrada, descarta el valor no vÃ¡lido y permite solicitarlo nuevamente
     }
 
-    printf("Captura el segundo número: "); // Solicitamos que el usuario capture el número 2
+    printf("Captura el segundo nÃºmero: "); // Solicitamos que el usuario capture el nÃºmero 2
     
-	// Creamos un bucle para numero2 para validar que scanf devuelva 1, por lo que no se terminará a menos que el valor capturado por el usuario sea un número válido
+	// Creamos un bucle para numero2 para validar que scanf devuelva 1, por lo que no se terminarÃ¡ a menos que el valor capturado por el usuario sea un nÃºmero vÃ¡lido
     while (scanf("%d", &numero2) != 1)
     {
-        printf("Captura un número entero para continuar: ");
-        while (getchar() != '\n');// getchar() Limpia el búfer de entrada y descarta el valor no válido y permite solicitarlo nuevamente 
+        printf("Captura un nÃºmero entero para continuar: ");
+        while (getchar() != '\n');// getchar() Limpia el bÃºfer de entrada y descarta el valor no vÃ¡lido y permite solicitarlo nuevamente 
     }
     if (numero1 != numero2)
     {
-        printf("¡Ni Dios lo quiera! %d no es igual a %d", numero1, numero2);
+        printf("Â¡Ni Dios lo quiera! %d no es igual a %d", numero1, numero2);
     }
     else
     {
-        printf("¡Muy bien! Los números son iguales");
+        printf("Â¡Muy bien! Los nÃºmeros son iguales");
     }
     
 	getch(); 
